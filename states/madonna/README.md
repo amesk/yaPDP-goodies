@@ -12,6 +12,14 @@ The state was restored and verified independently: **it contains everything need
 
 ![Preview of the Madonna and Child demonstration](preview.png)
 
+## Load directly in yaPDP
+
+Use this URL to load the saved state directly from the browser:
+
+[`madonna.state.zst`](https://raw.githubusercontent.com/amesk/yaPDP-goodies/main/states/madonna/madonna.state.zst)
+
+For URL-based loading, pass the raw-content URL to yaPDP (for example, as the value of the `state` query parameter). Use `raw.githubusercontent.com` URLs for browser `fetch()` requests; GitHub's `github.com/.../raw/...` page URLs may fail due to CORS.
+
 ## What to expect
 
 Load the saved state in yaPDP to resume the prepared session. The demonstration is intended to show the emulator's printing workflow and the resulting image.

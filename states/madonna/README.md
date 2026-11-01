@@ -1,6 +1,8 @@
 # Madonna and Child
 
-A ready-to-load yaPDP saved state prepared to print an image of Madonna and Child.
+A self-contained, ready-to-load yaPDP saved state prepared to print an image of Madonna and Child.
+
+The state was restored and verified independently: **it contains everything needed for this demonstration. No separate disk image from the `media/` collection is required.**
 
 ## Files
 
@@ -13,10 +15,6 @@ A ready-to-load yaPDP saved state prepared to print an image of Madonna and Chil
 ## What to expect
 
 Load the saved state in yaPDP to resume the prepared session. The demonstration is intended to show the emulator's printing workflow and the resulting image.
-
-## Related media
-
-The [RT-11 ASCII Art disk image](../../media/rt-11-ascii-art/README.md) is published separately in this repository. Its RT-11 directory includes a file named `MADONN.ART`. The disk image and this saved state are separate downloads; consult the emulator's restored device configuration when determining which media are required for a particular run.
 
 ## Format
 

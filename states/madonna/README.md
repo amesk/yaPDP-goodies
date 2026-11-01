@@ -2,6 +2,8 @@
 
 A self-contained, ready-to-load yaPDP saved state prepared to print an image of Madonna and Child.
 
+[▶ **Launch this demonstration in yaPDP**](https://amesk.github.io/yaPDP/pdp11.html?state=https%3A%2F%2Fraw.githubusercontent.com%2Famesk%2FyaPDP-goodies%2Fmain%2Fstates%2Fmadonna%2Fmadonna.state.zst)
+
 The state was restored and verified independently: **it contains everything needed for this demonstration. No separate disk image from the `media/` collection is required.**
 
 ## Files
@@ -14,11 +16,11 @@ The state was restored and verified independently: **it contains everything need
 
 ## Load directly in yaPDP
 
-Use this URL to load the saved state directly from the browser:
+The launch link above opens the public yaPDP application and passes the state URL automatically. To load the state manually, use this direct file URL:
 
 [`madonna.state.zst`](https://raw.githubusercontent.com/amesk/yaPDP-goodies/main/states/madonna/madonna.state.zst)
 
-For URL-based loading, pass the raw-content URL to yaPDP (for example, as the value of the `state` query parameter). Use `raw.githubusercontent.com` URLs for browser `fetch()` requests; GitHub's `github.com/.../raw/...` page URLs may fail due to CORS.
+For URL-based loading, use `raw.githubusercontent.com` URLs for browser `fetch()` requests; GitHub's `github.com/.../raw/...` page URLs may fail due to CORS.
 
 ## What to expect
 

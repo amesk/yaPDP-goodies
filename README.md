@@ -33,6 +33,14 @@ PNG previews and PDF documents are provided as ordinary files and can be viewed 
 
 Open the [yaPDP web application](https://amesk.github.io/yaPDP/) and use its relevant media or saved-state loading workflow. These files are published as a content collection; simply cloning this repository does not install them into yaPDP or add them to its built-in catalog.
 
+**For direct loading from a browser**, use URLs on `raw.githubusercontent.com`, not GitHub's `github.com/.../raw/...` page URLs. For example, a file at `states/example/example.state.zst` on the `main` branch can be addressed as:
+
+```
+https://raw.githubusercontent.com/amesk/yaPDP-goodies/main/states/example/example.state.zst
+```
+
+This raw-content URL can be supplied to yaPDP's URL-based state loader (for example, with the `?state=` query parameter). The `github.com/.../raw/...` URL may fail in browser `fetch()` requests because of cross-origin (CORS) headers.
+
 Refer to the README in each item directory for its contents and any item-specific notes.
 
 ## Contributing

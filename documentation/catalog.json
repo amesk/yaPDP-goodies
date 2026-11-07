@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "description": "Curated external references to PDP-11 documentation. These records do not represent files hosted by yaPDP-goodies.",
+  "items": [
+    {
+      "id": "pdp11-20-handbook-1971",
+      "type": "documentation",
+      "title": "PDP-11/20 Handbook",
+      "year": 1971,
+      "category": "hardware",
+      "models": [
+        "PDP-11/20"
+      ],
+      "publisher": "Digital Equipment Corporation",
+      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
+      "source_url": "https://bitsavers.org/pdf/dec/pdp11/handbooks/PDP1120_Handbook_1972.pdf",
+      "source_label": "Source listed by PCjs (Bitsavers)",
+      "access": "external",
+      "notes": "The PCjs entry is dated 1971; the linked source filename identifies a 1972 handbook. Verify the scan's title page before treating the dates as equivalent."
+    },
+    {
+      "id": "pdp11-40-handbook-1972",
+      "type": "documentation",
+      "title": "PDP-11/40 Handbook",
+      "year": 1972,
+      "category": "hardware",
+      "models": [
+        "PDP-11/40"
+      ],
+      "publisher": "Digital Equipment Corporation",
+      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
+      "source_url": "https://bitsavers.org/pdf/dec/pdp11/handbooks/PDP-11_40_Processor_Handbook_1972.pdf",
+      "source_label": "Source listed by PCjs (Bitsavers)",
+      "access": "external"
+    },
+    {
+      "id": "pdp11-70-handbook-1976",
+      "type": "documentation",
+      "title": "PDP-11/70 Handbook",
+      "year": 1976,
+      "category": "hardware",
+      "models": [
+        "PDP-11/70"
+      ],
+      "publisher": "Digital Equipment Corporation",
+      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
+      "source_url": "https://bitsavers.org/pdf/dec/pdp11/1170/PDP-11_70_Handbook_1977-78.pdf",
+      "source_label": "Source listed by PCjs (Bitsavers)",
+      "access": "external",
+      "notes": "PCjs dates this catalogue entry 1976; the linked filename identifies a 1977–78 handbook. Confirm edition details against the document itself."
+    },
+    {
+      "id": "pdp11-peripherals-handbook-1976",
+      "type": "documentation",
+      "title": "PDP-11 Peripherals Handbook",
+      "year": 1976,
+      "category": "peripherals",
+      "models": [
+        "PDP-11"
+      ],
+      "publisher": "Digital Equipment Corporation",
+      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
+      "access": "external",
+      "notes": "PCjs lists this title without a separate Source link."
+    },
+    {
+      "id": "pdp11-basic-programming-manual-1970",
+      "type": "documentation",
+      "title": "PDP-11 BASIC Programming Manual",
+      "year": 1970,
+      "category": "programming",
+      "models": [
+        "PDP-11"
+      ],
+      "systems": [
+        "BASIC"
+      ],
+      "publisher": "Digital Equipment Corporation",
+      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
+      "access": "external",
+      "notes": "Listed in the PDP-11 Software Documents section of PCjs."
+    },
+    {
+      "id": "macro11-reference-manual-1975",
+      "type": "documentation",
+      "title": "MACRO-11 Reference Manual",
+      "year": 1975,
+      "category": "programming",
+      "models": [
+        "PDP-11"
+      ],
+      "systems": [
+        "MACRO-11"
+      ],
+      "publisher": "Digital Equipment Corporation",
+      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
+      "access": "external",
+      "notes": "PCjs lists the December 1975 edition."
+    },
+    {
+      "id": "rt11-installation-system-generation-1980",
+      "type": "documentation",
+      "title": "RT-11 Installation and System Generation Guide",
+      "year": 1980,
+      "category": "operating-systems",
+      "models": [
+        "PDP-11"
+      ],
+      "systems": [
+        "RT-11"
+      ],
+      "publisher": "Digital Equipment Corporation",
+      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
+      "access": "external",
+      "notes": "PCjs lists the March 1980 edition."
+    },
+    {
+      "id": "vt100-technical-manual-1980",
+      "type": "documentation",
+      "title": "VT100 Technical Manual",
+      "year": 1980,
+      "category": "terminals",
+      "models": [
+        "VT100"
+      ],
+      "publisher": "Digital Equipment Corporation",
+      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
+      "source_url": "https://www.vt100.net/docs/vt100-tm/ek-vt100-tm-002.pdf",
+      "source_label": "Source listed by PCjs (vt100.net)",
+      "access": "external",
+      "notes": "September 1980 edition."
+    }
+  ]
+}

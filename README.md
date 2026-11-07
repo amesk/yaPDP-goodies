@@ -1,63 +1,52 @@
 # yaPDP Goodies
 
-Additional media and saved states for [yaPDP](https://github.com/amesk/yaPDP), a PDP-11 emulator that runs in the browser.
+A curated companion collection for [yaPDP](https://github.com/amesk/yaPDP), the browser-based PDP-11 emulator.
 
-This repository keeps optional demonstration content separate from the emulator source code. It is intended to be a small, browsable collection of disk images and ready-to-load machine states. The collection can grow with contributions from other yaPDP users.
+**Browse the collection:** [yaPDP Goodies on GitHub Pages](https://amesk.github.io/yaPDP-goodies/)
 
-- **Emulator:** [yaPDP on GitHub](https://github.com/amesk/yaPDP)
-- **Try it:** [yaPDP web application](https://amesk.github.io/yaPDP/)
+Goodies keeps optional content separate from the emulator itself:
 
-## Contents
+- **Saved states** — prepared machine sessions that can be launched in yaPDP.
+- **Disk images** — independent media resources to download and use with the emulator.
+- **Documentation** — bibliographic references to historical PDP-11 manuals and related material.
+- **Media** — supporting images and other collection material.
 
-The repository has two independent sections:
+The catalogue is a static site. It uses ordinary HTML, CSS, JavaScript and JSON and requires no build step or server-side component.
 
-- [`media/`](media/README.md) — disk images and other media that can be used by the emulator.
-- [`states/`](states/README.md) — saved emulator states, with previews and supporting material where available.
-- [`documentation/`](documentation/README.md) — curated references to historical PDP-11 documentation (initially external links; no PDFs mirrored).
+## Repository layout
 
-A saved state and a disk image are separate resources. A state may rely on a disk image, include the required data itself, or be useful on its own; dependencies are documented with each state when known.
+- `index.html`, `css/`, `js/` — the GitHub Pages catalogue.
+- `catalog.json` — states and disk images displayed on the site.
+- `states/` — saved emulator states and their supporting files.
+- `media/` — disk images and other media.
+- `documentation/catalog.json` — external documentation references.
 
-### Current collection
+## GitHub Pages
 
-| Item | Description |
-| --- | --- |
-| [RT-11 ASCII Art disk](media/rt-11-ascii-art/README.md) | An RT-11 volume containing a small collection of text and ASCII-art files. |
-| [Madonna demonstration state](states/madonna/README.md) | A saved yaPDP state set up to print an image of Madonna and Child. |
+To publish the site, open **Settings → Pages** and choose **Deploy from a branch**, then select the `main` branch and `/(root)` folder. After the branch containing the site is merged into `main`, GitHub Pages will publish it at:
+
+https://amesk.github.io/yaPDP-goodies/
+
+No build workflow is required.
+
+## Content and rights
+
+Saved states and disk images are independent resources. A state may be self-contained or may depend on a separate disk image; item notes should explain known dependencies and compatibility.
+
+The documentation catalogue initially contains external references, not mirrored PDFs. PCjs is used as a discovery index; its entries can point to material hosted by other archives. The presence of a document online does not by itself establish permission to redistribute it. Before adding document files to this repository, record the source and a clear redistribution basis or permission.
 
 ## File formats
 
-Large binary resources are stored using [Zstandard](https://facebook.github.io/zstd/) compression and use the `.zst` suffix. Keep the original filenames when downloading or mirroring the files. If a tool does not support Zstandard-compressed input, decompress the file before using it.
-
-PNG previews and PDF documents are provided as ordinary files and can be viewed directly.
-
-## Using the content
-
-Open the [yaPDP web application](https://amesk.github.io/yaPDP/) and use its relevant media or saved-state loading workflow. These files are published as a content collection; simply cloning this repository does not install them into yaPDP or add them to its built-in catalog.
-
-**For direct loading from a browser**, use URLs on `raw.githubusercontent.com`, not GitHub's `github.com/.../raw/...` page URLs. For example, a file at `states/example/example.state.zst` on the `main` branch can be addressed as:
-
-```
-https://raw.githubusercontent.com/amesk/yaPDP-goodies/main/states/example/example.state.zst
-```
-
-This raw-content URL can be supplied to yaPDP's URL-based state loader (for example, with the `?state=` query parameter). The `github.com/.../raw/...` URL may fail in browser `fetch()` requests because of cross-origin (CORS) headers.
-
-Refer to the README in each item directory for its contents and any item-specific notes.
+Large binary resources may use Zstandard compression and the `.zst` suffix. Keep original filenames when downloading or mirroring files. Decompress them first if the software you use does not support Zstandard input.
 
 ## Contributing
 
-Contributions of additional disk images, saved states, and demonstrations are welcome.
+For each new resource:
 
-For each contribution:
+1. Give it a descriptive directory under `states/` or `media/`.
+2. Add a README describing its contents, purpose, provenance and usage.
+3. Include a representative preview image where useful.
+4. Add or update the corresponding record in `catalog.json`.
+5. Document dependencies, attribution and licensing information.
 
-1. Put the resource in its own descriptive directory under `media/` or `states/`.
-2. Add a README explaining what it is, what a user should expect, and how it was created or obtained.
-3. For saved states, include a representative `preview.png` whenever possible.
-4. Document required media, emulator/version requirements, provenance, attribution, and licensing information whenever applicable.
-5. Do not include material unless you have the right to redistribute it.
-
-Keep media and states as independent resources where practical: several states may use the same disk image, and one disk image may be useful with several states.
-
-## License and attribution
-
-The repository includes an MIT license. Individual contributions may have separate copyright, attribution, or licensing requirements; check the relevant item README before redistributing an item. Contributors are responsible for documenting the rights and permissions applicable to the material they submit.
+For documentation references, update `documentation/catalog.json` and include a source link. Do not mirror a PDF unless its redistribution status is clear.

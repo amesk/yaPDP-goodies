@@ -48,7 +48,7 @@
       return `<article class="doc-row">
         <div class="doc-year">${escapeHtml(doc.year || "—")}</div>
         <div><div class="doc-title">${escapeHtml(doc.title)}</div><div class="doc-subtitle">${escapeHtml(details || doc.category || "PDP-11 reference")}</div></div>
-        <a class="doc-link" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">VIEW SOURCE ↗</a>
+        <a class="doc-link" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">OPEN PCjs INDEX ↗</a>
       </article>`;
     }).join("") : '<p class="empty-state">No documents match this search.</p>';
     document.querySelector('[data-count="documentation"]').textContent = String(documentation.length).padStart(2, "0");

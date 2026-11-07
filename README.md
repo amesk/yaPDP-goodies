@@ -13,6 +13,7 @@ The repository has two independent sections:
 
 - [`media/`](media/README.md) — disk images and other media that can be used by the emulator.
 - [`states/`](states/README.md) — saved emulator states, with previews and supporting material where available.
+- [`documentation/`](documentation/README.md) — curated references to historical PDP-11 documentation (initially external links; no PDFs mirrored).
 
 A saved state and a disk image are separate resources. A state may rely on a disk image, include the required data itself, or be useful on its own; dependencies are documented with each state when known.
 

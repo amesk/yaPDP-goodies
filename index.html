@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A curated collection of saved PDP-11 states, disk images and historical documentation for yaPDP.">
+  <title>yaPDP Goodies — Explore the PDP-11</title>
+  <link rel="icon" href="https://amesk.github.io/yaPDP/favicon.ico">
+  <link rel="stylesheet" href="css/goodies.css">
+  <script src="js/goodies.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="yaPDP Goodies home">
+      <span class="brand-mark">yaPDP</span>
+      <span class="brand-copy"><strong>GOODIES</strong><small>THE PDP-11 COLLECTION</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="#states">States</a>
+      <a href="#disks">Disk images</a>
+      <a href="#documentation">Documentation</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="emulator-link" href="https://amesk.github.io/yaPDP/pdp11.html">OPEN EMULATOR ↗</a>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero">
+      <p class="eyebrow">A COMPANION COLLECTION FOR yaPDP</p>
+      <h1>More to explore.<br><span>More to run.</span></h1>
+      <p class="hero-copy">Saved machine states, disk images and original documentation — collected to make the PDP-11 experience richer, more tangible and easier to explore.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#collection">EXPLORE THE COLLECTION</a>
+        <a class="button button-quiet" href="https://amesk.github.io/yaPDP/">ABOUT yaPDP</a>
+      </div>
+      <div class="hero-rule"><span>EST. 1970s</span><i></i><span>RECONSTRUCTED FOR THE BROWSER</span></div>
+    </section>
+
+    <section class="intro-strip" id="collection">
+      <div><span class="section-kicker">THE COLLECTION</span><h2>Useful things for a virtual PDP-11</h2></div>
+      <p>Each item has its own purpose: start from a prepared session, examine a disk image, or consult the manuals that taught people how to use the real machines.</p>
+    </section>
+
+    <section class="collection-section" id="states">
+      <div class="section-heading"><div><span class="section-kicker">01 / READY-TO-RUN</span><h2>Saved states</h2><p>Pick up a prepared machine session and see what happens.</p></div><span class="section-count" data-count="state">—</span></div>
+      <div class="card-grid" id="state-grid"><p class="loading">Loading collection…</p></div>
+    </section>
+
+    <section class="collection-section" id="disks">
+      <div class="section-heading"><div><span class="section-kicker">02 / MEDIA</span><h2>Disk images</h2><p>Volumes and media to inspect, mount and experiment with.</p></div><span class="section-count" data-count="disk">—</span></div>
+      <div class="card-grid" id="disk-grid"><p class="loading">Loading collection…</p></div>
+    </section>
+
+    <section class="collection-section" id="documentation">
+      <div class="section-heading"><div><span class="section-kicker">03 / THE LIBRARY</span><h2>Documentation</h2><p>Handbooks, programming manuals and peripheral references from the PDP-11 era.</p></div><span class="section-count" data-count="documentation">—</span></div>
+      <div class="doc-toolbar">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="doc-search" type="search" placeholder="Search titles, models or subjects…" autocomplete="off"></label>
+        <select id="doc-category" aria-label="Filter documentation">
+          <option value="all">All documents</option>
+          <option value="hardware">Hardware</option>
+          <option value="peripherals">Peripherals</option>
+          <option value="programming">Programming</option>
+          <option value="systems">Operating systems</option>
+        </select>
+      </div>
+      <div class="doc-list" id="documentation-list"><p class="loading">Loading references…</p></div>
+      <p class="library-note">Documentation entries are bibliographic references. Documents remain at their listed external sources; yaPDP-goodies does not mirror files whose redistribution rights have not been established.</p>
+    </section>
+
+    <section class="about-panel" id="about">
+      <div><span class="section-kicker">A NOTE ON THIS COLLECTION</span><h2>Separate content.<br>One living machine.</h2></div>
+      <div><p>yaPDP is the emulator. Goodies is its companion shelf: a place for optional material that can be explored without making the emulator itself larger or more complicated.</p><p>Some saved states can be launched directly. Disk images are offered as independent downloads, while documentation links point to their current hosts.</p><a class="text-link" href="https://github.com/amesk/yaPDP-goodies">Browse the repository ↗</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a href="https://github.com/amesk/yaPDP-goodies">yaPDP-goodies on GitHub</a><span>Made for curious operators.</span><a href="https://amesk.github.io/yaPDP/pdp11.html">Return to yaPDP ↗</a></footer>
+</body>
+</html>

@@ -13,8 +13,6 @@
       ],
       "publisher": "Digital Equipment Corporation",
       "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
-      "source_url": "https://bitsavers.org/pdf/dec/pdp11/handbooks/PDP1120_Handbook_1972.pdf",
-      "source_label": "Source listed by PCjs (Bitsavers)",
       "access": "external",
       "notes": "The PCjs entry is dated 1971; the linked source filename identifies a 1972 handbook. Verify the scan's title page before treating the dates as equivalent."
     },
@@ -29,8 +27,6 @@
       ],
       "publisher": "Digital Equipment Corporation",
       "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
-      "source_url": "https://bitsavers.org/pdf/dec/pdp11/handbooks/PDP-11_40_Processor_Handbook_1972.pdf",
-      "source_label": "Source listed by PCjs (Bitsavers)",
       "access": "external"
     },
     {
@@ -44,8 +40,6 @@
       ],
       "publisher": "Digital Equipment Corporation",
       "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
-      "source_url": "https://bitsavers.org/pdf/dec/pdp11/1170/PDP-11_70_Handbook_1977-78.pdf",
-      "source_label": "Source listed by PCjs (Bitsavers)",
       "access": "external",
       "notes": "PCjs dates this catalogue entry 1976; the linked filename identifies a 1977–78 handbook. Confirm edition details against the document itself."
     },
@@ -125,10 +119,62 @@
       ],
       "publisher": "Digital Equipment Corporation",
       "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
-      "source_url": "https://www.vt100.net/docs/vt100-tm/ek-vt100-tm-002.pdf",
-      "source_label": "Source listed by PCjs (vt100.net)",
       "access": "external",
       "notes": "September 1980 edition."
+    },
+    {
+      "id": "pdp11-45-handbook-1973",
+      "type": "documentation",
+      "title": "PDP-11/45 Handbook",
+      "year": 1973,
+      "category": "hardware",
+      "models": [
+        "PDP-11/45"
+      ],
+      "publisher": "Digital Equipment Corporation",
+      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
+      "access": "external"
+    },
+    {
+      "id": "pdp11-70-handbook-1979",
+      "type": "documentation",
+      "title": "PDP-11/70 Handbook",
+      "year": 1979,
+      "category": "hardware",
+      "models": [
+        "PDP-11/70"
+      ],
+      "publisher": "Digital Equipment Corporation",
+      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
+      "access": "external"
+    },
+    {
+      "id": "vt100-user-guide-1978",
+      "type": "documentation",
+      "title": "VT100 User Guide",
+      "year": 1978,
+      "category": "terminals",
+      "models": [
+        "VT100"
+      ],
+      "publisher": "Digital Equipment Corporation",
+      "pcjs_url": "https://www.pcjs.org/documents/manuals/dec/",
+      "access": "external",
+      "notes": "PCjs lists August 1978 and January 1979 editions."
+    },
+    {
+      "id": "vt100-field-maintenance-guide-1980",
+      "type": "documentation",
+      "title": "VT100 Field Maintenance Guide",
+      "year": 1980,
+      "category": "terminals",
+      "models": [
+        "VT100"
+      ],
+      "publisher": "Digital Equipment Corporation",
+      "pcjs_url": "https://www.pcjs.org/documents/manuals/dec/",
+      "access": "external",
+      "notes": "PCjs lists March 1980 and February 1982 editions."
     }
   ]
 }

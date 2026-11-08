@@ -167,3 +167,13 @@ a { color: inherit; }
   .carousel-controls button { width: 30px; height: 30px; }
   .detail-bottom { flex-direction: column; }
 }
+
+/* Documentation library */
+.doc-main { min-width: 0; }
+.doc-summary { margin: 7px 0 0; max-width: 760px; color: var(--muted); font: 12px/1.55 var(--serif); }
+.doc-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.doc-tag { padding: 3px 6px; border: 1px solid var(--line-soft); border-radius: 2px; color: var(--dim); font-size: 8px; letter-spacing: .3px; }
+@media (max-width: 500px) {
+  .doc-row { grid-template-columns: 48px minmax(0,1fr); }
+  .doc-link { grid-column: 2; }
+}

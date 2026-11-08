@@ -21,7 +21,8 @@
           "label": "ITEM NOTES",
           "url": "states/madonna/README.md"
         }
-      ]
+      ],
+      "page": "states/madonna/"
     },
     {
       "id": "kennedy",
@@ -42,7 +43,8 @@
           "label": "ITEM NOTES",
           "url": "states/kennedy/README.md"
         }
-      ]
+      ],
+      "page": "states/kennedy/"
     },
     {
       "id": "bones",
@@ -63,7 +65,8 @@
           "label": "ITEM NOTES",
           "url": "states/bones/README.md"
         }
-      ]
+      ],
+      "page": "states/bones/"
     },
     {
       "id": "girl",
@@ -84,7 +87,8 @@
           "label": "ITEM NOTES",
           "url": "states/girl/README.md"
         }
-      ]
+      ],
+      "page": "states/girl/"
     },
     {
       "id": "rt11-ascii-art",
@@ -104,7 +108,8 @@
           "label": "CONTENTS",
           "url": "media/rt-11-ascii-art/README.md"
         }
-      ]
+      ],
+      "page": "media/rt-11-ascii-art/"
     }
   ]
 }

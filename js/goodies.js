@@ -11,7 +11,7 @@
       ? `<img src="${escapeHtml(RAW + item.preview)}" alt="" loading="lazy">`
       : `<span class="image-placeholder" aria-hidden="true">${item.type === "disk" ? "▤" : "◈"}</span>`;
     const notes = (item.actions || []).find((action) => action.url && action.url.endsWith(".md"));
-    const detailUrl = notes ? notes.url.replace(/\\.md$/, "/index.html") : null;
+    const detailUrl = notes ? notes.url.replace(/\\/README\\.md$/i, "/index.html") : null;
     const actions = (item.actions || []).filter((action) => !action.url.endsWith(".md")).map((action) =>
       `<a class="card-action ${action.primary ? "primary" : ""}" href="${escapeHtml(action.url)}" ${action.external ? 'target="_blank" rel="noopener noreferrer"' : ""}>${escapeHtml(action.label)}</a>`
     ).join("");

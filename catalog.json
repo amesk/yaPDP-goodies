@@ -96,7 +96,7 @@
       "actions": [
         {
           "label": "DOWNLOAD IMAGE",
-          "url": "https://raw.githubusercontent.com/amesk/yaPDP-goodies/main/media/rt-11-ascii-art/rt-11-ascii-art.dsk.zst",
+          "url": "https://raw.githubusercontent.com/amesk/yaPDP-goodies/master/media/rt-11-ascii-art/rt-11-ascii-art.dsk.zst",
           "primary": true,
           "external": true
         },

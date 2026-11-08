@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  const RAW = "https://raw.githubusercontent.com/amesk/yaPDP-goodies/main/";
+  const RAW = "https://raw.githubusercontent.com/amesk/yaPDP-goodies/master/";
   const $ = (selector) => document.querySelector(selector);
   const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, (ch) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"

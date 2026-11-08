@@ -18,7 +18,7 @@ The state was restored and verified independently: **it contains everything need
 
 The launch link above opens the public yaPDP application and passes the state URL automatically. To load the state manually, use this direct file URL:
 
-[`madonna.state.zst`](https://raw.githubusercontent.com/amesk/yaPDP-goodies/main/states/madonna/madonna.state.zst)
+[`madonna.state.zst`](https://raw.githubusercontent.com/amesk/yaPDP-goodies/master/states/madonna/madonna.state.zst)
 
 For URL-based loading, use `raw.githubusercontent.com` URLs for browser `fetch()` requests; GitHub's `github.com/.../raw/...` page URLs may fail due to CORS.
 

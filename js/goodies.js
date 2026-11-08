@@ -10,9 +10,12 @@
     const image = item.preview
       ? `<img src="${escapeHtml(RAW + item.preview)}" alt="" loading="lazy">`
       : `<span class="image-placeholder" aria-hidden="true">${item.type === "disk" ? "▤" : "◈"}</span>`;
-    const actions = (item.actions || []).map((action) =>
+    const notes = (item.actions || []).find((action) => action.url && action.url.endsWith(".md"));
+    const detailUrl = notes ? notes.url.replace(/\\.md$/, "/index.html") : null;
+    const actions = (item.actions || []).filter((action) => !action.url.endsWith(".md")).map((action) =>
       `<a class="card-action ${action.primary ? "primary" : ""}" href="${escapeHtml(action.url)}" ${action.external ? 'target="_blank" rel="noopener noreferrer"' : ""}>${escapeHtml(action.label)}</a>`
     ).join("");
+    const details = detailUrl ? `<a class="card-action" href="${escapeHtml(detailUrl)}">EXPLORE ITEM ↗</a>` : "";
     return `<article class="item-card">
       <div class="item-image">${image}</div>
       <div class="item-body">
@@ -20,7 +23,7 @@
         <h3>${escapeHtml(item.title)}</h3>
         <p>${escapeHtml(item.description)}</p>
         <div class="item-meta">${escapeHtml(item.meta || "")}</div>
-        <div class="card-actions">${actions}</div>
+        <div class="card-actions">${actions}${details}</div>
       </div>
     </article>`;
   }
@@ -54,6 +57,19 @@
     document.querySelector('[data-count="documentation"]').textContent = String(documentation.length).padStart(2, "0");
   }
 
+  function initCarousels() {
+    document.querySelectorAll("[data-scroll]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const target = document.getElementById(button.dataset.scroll);
+        if (!target) return;
+        const direction = Number(button.dataset.direction || 1);
+        const card = target.querySelector(".item-card");
+        const distance = card ? card.getBoundingClientRect().width + 16 : target.clientWidth * 0.8;
+        target.scrollBy({ left: direction * distance, behavior: "smooth" });
+      });
+    });
+  }
+
   async function init() {
     try {
       const response = await fetch("catalog.json");
@@ -76,6 +92,7 @@
       console.error(error);
     }
   }
+  initCarousels();
   $("#doc-search").addEventListener("input", renderDocs);
   $("#doc-category").addEventListener("change", renderDocs);
   init();

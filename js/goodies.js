@@ -27,7 +27,10 @@
     $("#documentation-list").innerHTML=filtered.length?filtered.map(d=>{
       const meta=[d.year,d.document_number,...(d.models||[]),...(d.systems||[])].filter(Boolean).join(" · ");
       const tags=(d.topics||[]).slice(0,6).map(t=>`<span class="doc-tag">${esc(t)}</span>`).join("");
-      return `<article class="doc-row"><div class="doc-year">${esc(d.year||"—")}</div><div class="doc-main"><div class="doc-title">${esc(d.title)}</div><div class="doc-subtitle">${esc(meta)} · ${esc(d.source||"Archive")}</div><p class="doc-summary">${esc(d.summary||"")}</p><div class="doc-tags">${tags}</div></div><a class="doc-link" href="${esc(d.source_url||d.pcjs_url||"#")}" target="_blank" rel="noopener noreferrer">OPEN PDF ↗</a></article>`;
+      const cover=d.cover_url
+        ? `<a class="doc-cover" href="${esc(d.cover_source||d.cover_url)}" target="_blank" rel="noopener noreferrer"><img src="${esc(d.cover_url)}" alt="Cover of ${esc(d.title)}" loading="lazy"></a>`
+        : `<div class="doc-cover doc-cover-missing" aria-label="Cover image not available"><span>DEC</span><small>NO COVER<br>IMAGE</small></div>`;
+      return `<article class="doc-row">${cover}<div class="doc-main"><div class="doc-title">${esc(d.title)}</div><div class="doc-subtitle">${esc(meta)} · ${esc(d.source||"Archive")}</div><p class="doc-summary">${esc(d.summary||"")}</p><div class="doc-tags">${tags}</div>${d.cover_credit?`<div class="doc-cover-credit">${esc(d.cover_credit)}</div>`:""}</div><a class="doc-link" href="${esc(d.source_url||d.pcjs_url||"#")}" target="_blank" rel="noopener noreferrer">OPEN PDF ↗</a></article>`;
     }).join(""):'<p class="empty-state">No documents match this search.</p>';
     document.querySelector('[data-count="documentation"]').textContent=String(documentation.length).padStart(2,"0");
   }

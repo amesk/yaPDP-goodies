@@ -177,3 +177,16 @@ a { color: inherit; }
   .doc-row { grid-template-columns: 48px minmax(0,1fr); }
   .doc-link { grid-column: 2; }
 }
+
+/* Documentation cover previews */
+.doc-row { grid-template-columns: 82px minmax(0,1fr) auto; }
+.doc-cover { width: 76px; height: 104px; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid var(--line); background: #252117; text-decoration: none; }
+.doc-cover img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.doc-cover-missing { flex-direction: column; gap: 8px; color: var(--gold); background: linear-gradient(145deg,#333022,#171511); font: bold 18px var(--serif); letter-spacing: 1px; }
+.doc-cover-missing small { color: var(--dim); font: 7px/1.5 var(--sans); letter-spacing: 1px; text-align: center; }
+.doc-cover-credit { margin-top: 7px; color: var(--dim); font-size: 8px; line-height: 1.4; }
+@media (max-width: 500px) {
+  .doc-row { grid-template-columns: 64px minmax(0,1fr); }
+  .doc-cover { width: 58px; height: 82px; }
+  .doc-link { grid-column: 2; }
+}

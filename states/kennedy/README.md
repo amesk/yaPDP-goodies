@@ -8,7 +8,7 @@ The state was restored and verified independently: **it contains everything need
 
 ## Files
 
-- **[`kennedy.state.zst`](madonna.state.zst)** — the Zstandard-compressed saved emulator state.
+- **[`kennedy.state.zst`](kennedy.state.zst)** — the Zstandard-compressed saved emulator state.
 - **[`preview.png`](preview.png)** — a screenshot preview of the demonstration.
 
 ![Preview of the John F. Kennedy demonstration](preview.png)

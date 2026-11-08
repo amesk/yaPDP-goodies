@@ -13,7 +13,7 @@
       "actions": [
         {
           "label": "LAUNCH IN yaPDP",
-          "url": "https://amesk.github.io/yaPDP/pdp11.html?state=https%3A%2F%2Fraw.githubusercontent.com%2Famesk%2FyaPDP-goodies%2Fmain%2Fstates%2Fmadonna%2Fmadonna.state.zst",
+          "url": "https://amesk.github.io/yaPDP/pdp11.html?state=https%3A%2F%2Fraw.githubusercontent.com%2Famesk%2FyaPDP-goodies%2Fmaster%2Fstates%2Fmadonna%2Fmadonna.state.zst",
           "primary": true,
           "external": true
         },

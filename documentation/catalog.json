@@ -1,180 +1,346 @@
 {
-  "version": 1,
-  "description": "Curated external references to PDP-11 documentation. These records do not represent files hosted by yaPDP-goodies.",
+  "version": 2,
+  "description": "A focused reference library for the PDP-11/70 and its hardware, UNIBUS peripherals, operating systems, diagnostics and programming tools. PDFs are linked at archival hosts; local redistribution is not implied.",
+  "scope": {
+    "primary_model": "PDP-11/70",
+    "includes": [
+      "PDP-11/70 processor and maintenance documentation",
+      "PDP-11-compatible peripherals",
+      "RT-11 and PDP-11 software",
+      "console, memory and diagnostics"
+    ],
+    "excludes": [
+      "PDP-8",
+      "PDP-10",
+      "unrelated DEC computer families"
+    ]
+  },
   "items": [
     {
-      "id": "pdp11-20-handbook-1971",
+      "id": "pdp11-70-handbook-1977-78",
       "type": "documentation",
-      "title": "PDP-11/20 Handbook",
-      "year": 1971,
-      "category": "hardware",
-      "models": [
-        "PDP-11/20"
-      ],
-      "publisher": "Digital Equipment Corporation",
-      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
-      "access": "external",
-      "notes": "The PCjs entry is dated 1971; the linked source filename identifies a 1972 handbook. Verify the scan's title page before treating the dates as equivalent."
-    },
-    {
-      "id": "pdp11-40-handbook-1972",
-      "type": "documentation",
-      "title": "PDP-11/40 Handbook",
-      "year": 1972,
-      "category": "hardware",
-      "models": [
-        "PDP-11/40"
-      ],
-      "publisher": "Digital Equipment Corporation",
-      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
-      "access": "external"
-    },
-    {
-      "id": "pdp11-70-handbook-1976",
-      "type": "documentation",
-      "title": "PDP-11/70 Handbook",
-      "year": 1976,
+      "title": "PDP-11/70 Processor Handbook",
+      "year": "1977–78",
       "category": "hardware",
       "models": [
         "PDP-11/70"
       ],
       "publisher": "Digital Equipment Corporation",
-      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
+      "document_number": "EK-11070-HB-001",
+      "source": "Bitsavers",
+      "source_url": "https://bitsavers.org/pdf/dec/pdp11/1170/PDP-11_70_Handbook_1977-78.pdf",
+      "format": "PDF",
       "access": "external",
-      "notes": "PCjs dates this catalogue entry 1976; the linked filename identifies a 1977–78 handbook. Confirm edition details against the document itself."
+      "redistribution_status": "not-assessed",
+      "summary": "The principal reference for PDP-11/70 architecture, instruction set, memory management, UNIBUS map, cache and floating-point options.",
+      "topics": [
+        "processor",
+        "architecture",
+        "MMU",
+        "UNIBUS map",
+        "cache",
+        "floating point"
+      ]
+    },
+    {
+      "id": "kb11c-processor-manual",
+      "type": "documentation",
+      "title": "KB11-C Processor Manual (PDP-11/70)",
+      "year": "1975",
+      "category": "hardware",
+      "models": [
+        "PDP-11/70"
+      ],
+      "publisher": "Digital Equipment Corporation",
+      "document_number": "EK-KB11C-TM-001",
+      "source": "Bitsavers",
+      "source_url": "https://bitsavers.trailing-edge.com/pdf/dec/pdp11/1170/EK-KB11C-TM-001_1170procMan.pdf",
+      "format": "PDF",
+      "access": "external",
+      "redistribution_status": "not-assessed",
+      "summary": "Technical description of the KB11-C CPU, registers, traps, interrupts, memory management, UNIBUS mapping and cache.",
+      "topics": [
+        "KB11-C",
+        "CPU",
+        "registers",
+        "interrupts",
+        "MMU",
+        "cache"
+      ]
+    },
+    {
+      "id": "pdp11-70-maintenance-installation",
+      "type": "documentation",
+      "title": "PDP-11/70 Maintenance and Installation Manual",
+      "year": "1979",
+      "category": "hardware",
+      "models": [
+        "PDP-11/70"
+      ],
+      "publisher": "Digital Equipment Corporation",
+      "document_number": "EK-11070-MM-002",
+      "source": "Bitsavers",
+      "source_url": "https://www.bitsavers.org/pdf/dec/pdp11/1170/EK-11070-MM-002_May79.pdf",
+      "format": "PDF",
+      "access": "external",
+      "redistribution_status": "not-assessed",
+      "summary": "System configuration, installation, checkout, bootstrap modules, diagnostics, MJ11/MK11 memory, RH70 and power maintenance.",
+      "topics": [
+        "installation",
+        "maintenance",
+        "RH70",
+        "MJ11",
+        "MK11",
+        "M9301",
+        "M9312"
+      ]
     },
     {
       "id": "pdp11-peripherals-handbook-1976",
       "type": "documentation",
       "title": "PDP-11 Peripherals Handbook",
-      "year": 1976,
+      "year": "1976",
       "category": "peripherals",
       "models": [
-        "PDP-11"
+        "PDP-11/70"
       ],
       "publisher": "Digital Equipment Corporation",
-      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
+      "document_number": "",
+      "source": "Bitsavers",
+      "source_url": "https://www.bitsavers.org/pdf/dec/pdp11/handbooks/PDP-11_PeripheralsHbk_1976.pdf",
+      "format": "PDF",
       "access": "external",
-      "notes": "PCjs lists this title without a separate Source link."
+      "redistribution_status": "not-assessed",
+      "summary": "Terminals, paper tape, printers, magnetic tape, disks, displays, communications, device registers, interrupts, DMA and UNIBUS interfacing.",
+      "topics": [
+        "UNIBUS",
+        "terminals",
+        "paper tape",
+        "printers",
+        "tape",
+        "disks",
+        "DMA"
+      ]
     },
     {
-      "id": "pdp11-basic-programming-manual-1970",
+      "id": "pdp11-software-handbook-1978",
       "type": "documentation",
-      "title": "PDP-11 BASIC Programming Manual",
-      "year": 1970,
+      "title": "PDP-11 Software Handbook",
+      "year": "1978",
       "category": "programming",
       "models": [
-        "PDP-11"
-      ],
-      "systems": [
-        "BASIC"
+        "PDP-11/70"
       ],
       "publisher": "Digital Equipment Corporation",
-      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
+      "document_number": "EB-17716-18/79",
+      "source": "Bitsavers",
+      "source_url": "https://www.bitsavers.org/pdf/dec/pdp11/handbooks/PDP-11_Software_Handbook_1978.pdf",
+      "format": "PDF",
       "access": "external",
-      "notes": "Listed in the PDP-11 Software Documents section of PCjs."
+      "redistribution_status": "not-assessed",
+      "summary": "Survey of PDP-11 operating systems, languages, data management and communications software.",
+      "topics": [
+        "RT-11",
+        "RSX-11",
+        "RSTS/E",
+        "UNIX",
+        "BASIC",
+        "FORTRAN",
+        "MACRO-11",
+        "DECnet"
+      ]
     },
     {
-      "id": "macro11-reference-manual-1975",
-      "type": "documentation",
-      "title": "MACRO-11 Reference Manual",
-      "year": 1975,
-      "category": "programming",
-      "models": [
-        "PDP-11"
-      ],
-      "systems": [
-        "MACRO-11"
-      ],
-      "publisher": "Digital Equipment Corporation",
-      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
-      "access": "external",
-      "notes": "PCjs lists the December 1975 edition."
-    },
-    {
-      "id": "rt11-installation-system-generation-1980",
+      "id": "rt11-installation-guide-v4",
       "type": "documentation",
       "title": "RT-11 Installation and System Generation Guide",
-      "year": 1980,
+      "year": "1980 (updated 1981)",
       "category": "operating-systems",
       "models": [
-        "PDP-11"
-      ],
-      "systems": [
-        "RT-11"
+        "PDP-11/70"
       ],
       "publisher": "Digital Equipment Corporation",
-      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
+      "document_number": "AA-H376A-TC",
+      "source": "Bitsavers",
+      "source_url": "https://bitsavers.trailing-edge.com/pdf/dec/pdp11/rt11/v4.0_Mar80/1b/AA-H376A-TC_RT-11_V4.0_Installation_Manual_Mar81.pdf",
+      "format": "PDF",
       "access": "external",
-      "notes": "PCjs lists the March 1980 edition."
+      "redistribution_status": "not-assessed",
+      "summary": "Installing RT-11 V4, bootstrapping, distribution volumes, patches, system generation, monitors and device handlers.",
+      "topics": [
+        "RT-11 V4",
+        "installation",
+        "SYSGEN",
+        "boot",
+        "device handlers"
+      ]
     },
     {
-      "id": "vt100-technical-manual-1980",
+      "id": "introduction-to-rt11-v4",
       "type": "documentation",
-      "title": "VT100 Technical Manual",
-      "year": 1980,
-      "category": "terminals",
+      "title": "Introduction to RT-11",
+      "year": "1980",
+      "category": "operating-systems",
       "models": [
-        "VT100"
+        "PDP-11/70"
       ],
       "publisher": "Digital Equipment Corporation",
-      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
+      "document_number": "AA-5281B-TC",
+      "source": "Bitsavers",
+      "source_url": "https://www.bitsavers.org/pdf/dec/pdp11/rt11/v4.0_Mar80/1b/AA-5281B-TC_Introduction_to_RT-11_Mar80.pdf",
+      "format": "PDF",
       "access": "external",
-      "notes": "September 1980 edition."
+      "redistribution_status": "not-assessed",
+      "summary": "Introductory guide to starting and using RT-11, system interaction and related PDP-11 software.",
+      "topics": [
+        "RT-11",
+        "operator guide",
+        "startup",
+        "commands"
+      ]
     },
     {
-      "id": "pdp11-45-handbook-1973",
+      "id": "basic11-rt11-v2-users-guide",
       "type": "documentation",
-      "title": "PDP-11/45 Handbook",
-      "year": 1973,
-      "category": "hardware",
+      "title": "BASIC-11/RT-11 V2 User's Guide",
+      "year": "1978",
+      "category": "programming",
       "models": [
-        "PDP-11/45"
+        "PDP-11/70"
       ],
       "publisher": "Digital Equipment Corporation",
-      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
-      "access": "external"
+      "document_number": "DEC-11-LIBUA-A-D",
+      "source": "Bitsavers",
+      "source_url": "https://www.bitsavers.org/pdf/dec/pdp11/lang/basic/basic-11/DEC-11-LIBUA-A-D_BASIC-11_RT-11_V2_Users_Guide_197803.pdf",
+      "format": "PDF",
+      "access": "external",
+      "redistribution_status": "not-assessed",
+      "summary": "Using BASIC-11 under RT-11, including startup, file handling, I/O and program operation.",
+      "topics": [
+        "BASIC-11",
+        "RT-11",
+        "programming",
+        "file I/O"
+      ]
     },
     {
-      "id": "pdp11-70-handbook-1979",
+      "id": "pdp11-70-maintenance-service-guide",
       "type": "documentation",
-      "title": "PDP-11/70 Handbook",
-      "year": 1979,
+      "title": "PDP-11/70 Maintenance Service Guide",
+      "year": "1988",
+      "category": "diagnostics",
+      "models": [
+        "PDP-11/70"
+      ],
+      "publisher": "Digital Equipment Corporation",
+      "document_number": "KA-K1170-MG-003",
+      "source": "Bitsavers",
+      "source_url": "https://bitsavers.org/pdf/dec/pdp11/1170/KA-K1170-MG-003_1170_Maintenance_Service_Guide_Apr88.pdf",
+      "format": "PDF",
+      "access": "external",
+      "redistribution_status": "not-assessed",
+      "summary": "Later service reference covering processor, cache, memory management, UNIBUS map, power-fail and processor/memory diagnostics.",
+      "topics": [
+        "XXDP",
+        "MAINDEC",
+        "diagnostics",
+        "CPU tests",
+        "memory tests",
+        "RH70"
+      ]
+    },
+    {
+      "id": "fp11c-maintenance-manual",
+      "type": "documentation",
+      "title": "FP11-C Floating-Point Processor Maintenance Manual",
+      "year": "1976",
       "category": "hardware",
       "models": [
         "PDP-11/70"
       ],
       "publisher": "Digital Equipment Corporation",
-      "pcjs_url": "https://www.pcjs.org/machines/dec/pdp11/",
-      "access": "external"
+      "document_number": "EK-FP11C-MM-01",
+      "source": "Bitsavers",
+      "source_url": "https://bitsavers.org/pdf/dec/pdp11/1170/EK-FP11C-MM-01_FP11C_May76.pdf",
+      "format": "PDF",
+      "access": "external",
+      "redistribution_status": "not-assessed",
+      "summary": "Maintenance documentation for the FP11-C floating-point option used with the PDP-11/70.",
+      "topics": [
+        "FP11-C",
+        "floating point",
+        "maintenance"
+      ]
     },
     {
-      "id": "vt100-user-guide-1978",
+      "id": "ky11r-console-technical-manual",
       "type": "documentation",
-      "title": "VT100 User Guide",
-      "year": 1978,
-      "category": "terminals",
+      "title": "KY11-R Family of Electronic Consoles Technical Manual",
+      "year": "1980",
+      "category": "hardware",
       "models": [
-        "VT100"
+        "PDP-11/70"
       ],
       "publisher": "Digital Equipment Corporation",
-      "pcjs_url": "https://www.pcjs.org/documents/manuals/dec/",
+      "document_number": "EK-KY11R-TM-002",
+      "source": "Bitsavers",
+      "source_url": "https://bitsavers.org/pdf/dec/pdp11/1170/EK-KY11R-TM-002_KY11-R_Family_of_Electronic_Consoles_Technical_Manual.pdf",
+      "format": "PDF",
       "access": "external",
-      "notes": "PCjs lists August 1978 and January 1979 editions."
+      "redistribution_status": "not-assessed",
+      "summary": "Technical reference for the electronic console family and its interface and operation.",
+      "topics": [
+        "KY11-R",
+        "console",
+        "front panel"
+      ]
     },
     {
-      "id": "vt100-field-maintenance-guide-1980",
+      "id": "mj11-users-manual",
       "type": "documentation",
-      "title": "VT100 Field Maintenance Guide",
-      "year": 1980,
-      "category": "terminals",
+      "title": "MJ11 Memory System User's Manual",
+      "year": "1976",
+      "category": "hardware",
       "models": [
-        "VT100"
+        "PDP-11/70"
       ],
       "publisher": "Digital Equipment Corporation",
-      "pcjs_url": "https://www.pcjs.org/documents/manuals/dec/",
+      "document_number": "EK-MJ11-OP-001",
+      "source": "Bitsavers",
+      "source_url": "https://bitsavers.org/pdf/dec/pdp11/1170/EK-MJ11-OP-001_UsersMan_Dec76.pdf",
+      "format": "PDF",
       "access": "external",
-      "notes": "PCjs lists March 1980 and February 1982 editions."
+      "redistribution_status": "not-assessed",
+      "summary": "User and maintenance reference for the MJ11 memory system in PDP-11/70 configurations.",
+      "topics": [
+        "MJ11",
+        "memory",
+        "configuration"
+      ]
+    },
+    {
+      "id": "pdp11-processor-handbook-1979",
+      "type": "documentation",
+      "title": "PDP-11 Processor Handbook",
+      "year": "1979",
+      "category": "hardware",
+      "models": [
+        "PDP-11/70"
+      ],
+      "publisher": "Digital Equipment Corporation",
+      "document_number": "EB-17716-18/79",
+      "source": "Bitsavers",
+      "source_url": "https://bitsavers.org/pdf/dec/pdp11/handbooks/PDP11_Handbook1979.pdf",
+      "format": "PDF",
+      "access": "external",
+      "redistribution_status": "not-assessed",
+      "summary": "Family processor handbook with a PDP-11/70 chapter; useful for comparison with related models.",
+      "topics": [
+        "PDP-11/70",
+        "processor comparison",
+        "UNIBUS",
+        "memory management"
+      ]
     }
   ]
 }

@@ -7,6 +7,8 @@ A saved state captures a configured emulator session and can be used to return t
 ## Available states
 
 - [Madonna demonstration](madonna/README.md) — a saved state set up to print an image of Madonna and Child.
+- [Kennedy demonstration](kennedy/README.md) — a saved state set up to print an image of John F. Kennedy.
+- [Bones demonstration](bones/README.md) — a saved state set up to print an image of Dr. Mc Coy.
 
 ## File conventions
 

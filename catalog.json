@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "description": "Curated states and disk images for yaPDP-goodies. Documentation is maintained in documentation/catalog.json.",
+  "items": [
+    {
+      "id": "madonna-and-child",
+      "type": "state",
+      "title": "Madonna and Child",
+      "kicker": "READY-TO-RUN STATE",
+      "description": "A prepared PDP-11 session that prints the Madonna and Child image. The state is self-contained; no separate disk image is required.",
+      "preview": "states/madonna/preview.png",
+      "meta": "Self-contained · Zstandard-compressed state",
+      "actions": [
+        {
+          "label": "LAUNCH IN yaPDP",
+          "url": "https://amesk.github.io/yaPDP/pdp11.html?state=https%3A%2F%2Fraw.githubusercontent.com%2Famesk%2FyaPDP-goodies%2Fmain%2Fstates%2Fmadonna%2Fmadonna.state.zst",
+          "primary": true,
+          "external": true
+        },
+        {
+          "label": "ITEM NOTES",
+          "url": "states/madonna/README.md"
+        }
+      ]
+    },
+    {
+      "id": "kennedy",
+      "type": "state",
+      "title": "John F. Kennedy",
+      "kicker": "READY-TO-RUN STATE",
+      "description": "A prepared PDP-11 session that prints John F. Kennedy image. The state is self-contained; no separate disk image is required.",
+      "preview": "states/kennedy/preview.png",
+      "meta": "Self-contained · Zstandard-compressed state",
+      "actions": [
+        {
+          "label": "LAUNCH IN yaPDP",
+          "url": "https://amesk.github.io/yaPDP/pdp11.html?state=https%3A%2F%2Fraw.githubusercontent.com%2Famesk%2FyaPDP-goodies%2Fmaster%2Fstates%2Fkennedy%2Fkennedy.state.zst",
+          "primary": true,
+          "external": true
+        },
+        {
+          "label": "ITEM NOTES",
+          "url": "states/kennedy/README.md"
+        }
+      ]
+    },
+    {
+      "id": "bones",
+      "type": "state",
+      "title": "Dr. Mc Coy",
+      "kicker": "READY-TO-RUN STATE",
+      "description": "A prepared PDP-11 session that prints Dr. Mc Coy image. The state is self-contained; no separate disk image is required.",
+      "preview": "states/bones/preview.png",
+      "meta": "Self-contained · Zstandard-compressed state",
+      "actions": [
+        {
+          "label": "LAUNCH IN yaPDP",
+          "url": "https://amesk.github.io/yaPDP/pdp11.html?state=https%3A%2F%2Fraw.githubusercontent.com%2Famesk%2FyaPDP-goodies%2Fmaster%2Fstates%2Fbones%2Fbones.state.zst",
+          "primary": true,
+          "external": true
+        },
+        {
+          "label": "ITEM NOTES",
+          "url": "states/bones/README.md"
+        }
+      ]
+    },
+    {
+      "id": "girl",
+      "type": "state",
+      "title": "Pretty girl",
+      "kicker": "READY-TO-RUN STATE",
+      "description": "A prepared PDP-11 session that prints a pretty girl image. The state is self-contained; no separate disk image is required.",
+      "preview": "states/girl/preview.png",
+      "meta": "Self-contained · Zstandard-compressed state",
+      "actions": [
+        {
+          "label": "LAUNCH IN yaPDP",
+          "url": "https://amesk.github.io/yaPDP/pdp11.html?state=https%3A%2F%2Fraw.githubusercontent.com%2Famesk%2FyaPDP-goodies%2Fmaster%2Fstates%2Fgirl%2Fgirl.state.zst",
+          "primary": true,
+          "external": true
+        },
+        {
+          "label": "ITEM NOTES",
+          "url": "states/girl/README.md"
+        }
+      ]
+    },
+    {
+      "id": "rt11-ascii-art",
+      "type": "disk",
+      "title": "RT-11 ASCII Art",
+      "kicker": "DISK IMAGE",
+      "description": "An RT-11 volume with text and artwork files, including MADONN.ART, BONES.ART and KENNED.ART.",
+      "meta": "RT-11 · RT11A · 6 files · .dsk.zst",
+      "actions": [
+        {
+          "label": "DOWNLOAD IMAGE",
+          "url": "https://raw.githubusercontent.com/amesk/yaPDP-goodies/main/media/rt-11-ascii-art/rt-11-ascii-art.dsk.zst",
+          "primary": true,
+          "external": true
+        },
+        {
+          "label": "CONTENTS",
+          "url": "media/rt-11-ascii-art/README.md"
+        }
+      ]
+    }
+  ]
+}

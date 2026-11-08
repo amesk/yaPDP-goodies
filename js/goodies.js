@@ -11,11 +11,11 @@
       ? `<img src="${escapeHtml(RAW + item.preview)}" alt="" loading="lazy">`
       : `<span class="image-placeholder" aria-hidden="true">${item.type === "disk" ? "▤" : "◈"}</span>`;
     const notes = (item.actions || []).find((action) => action.url && action.url.endsWith(".md"));
-    const detailUrl = notes ? `${notes.url.slice(0, notes.url.lastIndexOf("/"))}/index.html` : null;
+    const detailUrl = item.page || (notes ? `${notes.url.slice(0, notes.url.lastIndexOf("/"))}/` : null);
     const actions = (item.actions || []).filter((action) => !action.url.endsWith(".md")).map((action) =>
       `<a class="card-action ${action.primary ? "primary" : ""}" href="${escapeHtml(action.url)}" ${action.external ? 'target="_blank" rel="noopener noreferrer"' : ""}>${escapeHtml(action.label)}</a>`
     ).join("");
-    const details = detailUrl ? `<a class="card-action" href="${escapeHtml(detailUrl)}">EXPLORE ITEM ↗</a>` : "";
+    const details = detailUrl ? `<a class="card-action" href="${escapeHtml(detailUrl)}">ITEM NOTES ↗</a>` : "";
     return `<article class="item-card">
       <div class="item-image">${image}</div>
       <div class="item-body">

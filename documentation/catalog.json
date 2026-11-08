@@ -40,7 +40,11 @@
         "UNIBUS map",
         "cache",
         "floating point"
-      ]
+      ],
+      "cover_url": "https://www.iser.fau.de/files/2023/03/pdp11-70.jpg",
+      "cover_source": "https://www.iser.fau.de/2023/03/10/neuzugang-handbuecher-fuer-dec-pdp11/",
+      "cover_credit": "Informatik-Sammlung Erlangen (ISER), photograph of the 1977–78 handbook",
+      "cover_status": "external-photo"
     },
     {
       "id": "kb11c-processor-manual",
@@ -120,7 +124,11 @@
         "tape",
         "disks",
         "DMA"
-      ]
+      ],
+      "cover_url": "https://i.ebayimg.com/images/g/o0UAAOSwEeFVOrVX/s-l1200.jpg",
+      "cover_source": "https://www.ebay.com/itm/116340498005",
+      "cover_credit": "Photograph from a historical-book listing; externally hosted",
+      "cover_status": "external-photo"
     },
     {
       "id": "pdp11-software-handbook-1978",
